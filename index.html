@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Création de compte</title>
+
+    <!--CSS Time here-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--JS Time there-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+
+<body>
+    <section class="createAccount">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-sm-12 col-md-4 leftContent">
+                    <div class="gradient">
+                        <div class="buttonContainer" data-aos="fade-right" data-aos-delay="300"
+                            data-aos-duration="1000">
+                            <button><i class="fa fa-chevron-left"></i></button>
+                        </div>
+                        <div class="col 12 subtitle" data-aos="fade-right" data-aos-delay="600"
+                            data-aos-duration="1000">
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                        <div class="col 12 subContent" data-aos="fade-right" data-aos-delay="900"
+                            data-aos-duration="1000">
+                            <p class="title">Lorem ipsum dolor sit amet</p>
+                            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae hic
+                                cupiditate quaerat,
+                                minuseos et asperiores, qui sed reprehenderit dolorem molestias accusantium blanditiis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 rightContent">
+                    <div class="mapContainer">
+                        <div id="map" style="width:70%;height:260px;"></div>
+                    </div>
+                    <div class="fromContainer">
+                        <h3>Créer un compte</h3>
+                        <span class="straight"></span>
+                        <p>Veuillez renseigner les informations ci-dessous</p>
+                        <form id="accountForm" action="post" onsubmit="event.preventDefault()">
+                            <div class="inputRow">
+                                <p>Vous êtes</p>
+                                <div class="radioContainer">
+                                    <p>
+                                        <input type="radio" id="Mr" name="gender" value="mr">
+                                        <label for="Mr">Mr</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="Mme" name="gender" value="mrs">
+                                        <label for="Mme">Mme</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="Mlle" name="gender" value="miss">
+                                        <label for="Mlle">Mlle</label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <input type="text" name="lastName" class="selectInput" id="lastName" value="" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Nom</label>
+                            </div>
+                            <div class="group">
+                                <input type="text" name="firstName" class="selectInput" id="firstName" value=""
+                                    required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Prénom</label>
+                            </div>
+                            <div class="group">
+                                <input type="text" name="email" id="email" value="" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Email</label>
+                            </div>
+                            <div class="birthSelect">
+                                <div class="group" id="groupMonth">
+                                    <select name="month" class="selectInput" id="month">
+                                        <option value="">Date de naissance</option>
+                                        <option value="january">Janvier</option>
+                                        <option value="february">Février</option>
+                                        <option value="march">Mars</option>
+                                        <option value="april">Avril</option>
+                                        <option value="may">Mai</option>
+                                        <option value="june">Juin</option>
+                                        <option value="jully">Juillet</option>
+                                        <option value="august">Aout</option>
+                                        <option value="september">Septembre</option>
+                                        <option value="october">Octobre</option>
+                                        <option value="november">Novembre</option>
+                                        <option value="december">Décembre</option>
+                                    </select>
+                                    <span class="bar"></span>
+                                </div>
+                                <div class="group" id="groupYear">
+                                    <select name="year" class="selectInput" id="year">
+                                        <option value=""></option>
+                                        <option value="">1985</option>
+                                        <option value="02">1986</option>
+                                        <option value="03">1987</option>
+                                        <option value="04">1988</option>
+                                        <option value="05">1989</option>
+                                        <option value="06">1990</option>
+                                        <option value="07">1991</option>
+                                        <option value="08">1992</option>
+                                        <option value="09">1993</option>
+                                        <option value="10">1994</option>
+                                        <option value="11">1995</option>
+                                        <option value="12">1996</option>
+                                        <option value="13">1997</option>
+                                        <option value="14">1998</option>
+                                        <option value="15">1999</option>
+                                        <option value="16">2000</option>
+                                        <option value="17">2001</option>
+                                        <option value="18">2002</option>
+                                        <option value="19">2003</option>
+                                        <option value="20">2004</option>
+                                        <option value="21">2005</option>
+                                        <option value="22">2006</option>
+                                        <option value="23">2007</option>
+                                        <option value="24">2008</option>
+                                        <option value="25">2009</option>
+                                        <option value="26">2010</option>
+                                        <option value="27">2011</option>
+                                        <option value="28">2012</option>
+                                        <option value="29">2013</option>
+                                        <option value="30">2014</option>
+                                        <option value="31">2015</option>
+                                    </select>
+                                    <span class="bar"></span>
+                                </div>
+                                <div class="group" id="groupDay">
+                                    <select name="day" class="selectInput" id="day">
+                                        <option value=""></option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <span class="bar"></span>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <input type="text" class="selectInput" required name="postalCode">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Code potal</label>
+                            </div>
+                            <div class="group">
+                                <input type="password" class="selectInput" id="pass" required name="password"><i
+                                    class="fas fa-eye" id="hide" onclick="Showpass()"></i><i class="fas fa-eye-slash"
+                                    id="show" onclick="Showpass()"></i>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Mot de passe</label>
+                            </div>
+                            <div class="group">
+                                <input type="password" id="passconf" class="selectInput" required
+                                    name="confirmPasword"><i class="fas fa-eye" id="hideconf"
+                                    onclick="Showpassconf()"></i><i class="fas fa-eye-slash" id="showconf"
+                                    onclick="Showpassconf()"></i>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Confirmation mot de passe</label>
+                            </div>
+                            <div class="conditionGenerales">
+                                <p class="conditionContainer">
+                                    <input type="checkbox" id="CGU" name="check">
+                                    <label for="CGU"></label>
+                                </p>
+                                <p>J'accepte les <a href="">conditions générales de ventes </a>et les respecteraient
+                                    sans conditions.</p>
+                            </div>
+                            <button>créer un compte</button>
+                            <p>Vous avez déjà un compte ? <a href="">Connectez-vous</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function initMap() {
+
+            var styledMapType = new google.maps.StyledMapType(
+                [{
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#212121"
+                        }]
+                    },
+                    {
+                        "elementType": "labels.icon",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#757575"
+                        }]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#212121"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#757575"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#9e9e9e"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative.land_parcel",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative.locality",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#bdbdbd"
+                        }]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#757575"
+                        }]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#181818"
+                        }]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#616161"
+                        }]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#1b1b1b"
+                        }]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#2c2c2c"
+                        }]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#8a8a8a"
+                        }]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#373737"
+                        }]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#3c3c3c"
+                        }]
+                    },
+                    {
+                        "featureType": "road.highway.controlled_access",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#4e4e4e"
+                        }]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#616161"
+                        }]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#757575"
+                        }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#3d3d3d"
+                        }]
+                    }
+                ], {
+                    name: 'Styled Map'
+                });
+
+            // Create a map object, and include the MapTypeId to add
+            // to the map type control.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 48.87,
+                    lng: 2.35
+                },
+                zoom: 15,
+                mapTypeControlOptions: {
+                    mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                        'styled_map'
+                    ]
+                }
+            });
+            var marker = new google.maps.Marker({
+                map: map,
+                draggable: true,
+                animation: google.maps.Animation.DROP,
+                position: {
+                    lat: 48.87,
+                    lng: 2.35,
+
+                },
+                icon: {
+                    url: "assets/images/Bitmap.png",
+                    scaledSize: new google.maps.Size(20, 20)
+                }
+            });
+
+            function CenterControl(controlDiv, map) {
+
+                // Set CSS for the control border.
+                var controlUI = document.createElement('div');
+                controlUI.style.backgroundColor = '#fff';
+                controlUI.style.border = '2px solid #fff';
+                controlUI.style.borderRadius = '3px';
+                controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+                controlUI.style.cursor = 'pointer';
+                controlUI.style.position = 'absolute';
+                controlUI.style.top = '185px';
+                controlUI.style.left = '215px';
+                controlUI.style.width = '20px';
+
+                controlUI.title = 'Click to recenter the map';
+                controlUI.className='recenter'
+                controlDiv.appendChild(controlUI);
+
+                // Set CSS for the control interior.
+                var controlText = document.createElement('div');
+                controlText.innerHTML = '<img src="assets/images/center.png" style="height:15px">';
+                controlUI.appendChild(controlText);
+
+                
+                controlUI.addEventListener('click', function () {
+                    map.setCenter({
+                    lat: 48.87,
+                    lng: 2.35
+                });
+                });
+
+            }
+            marker.addListener('click', toggleBounce);
+
+            //Associate the styled map with the MapTypeId and set it to display.
+            map.mapTypes.set('styled_map', styledMapType);
+            map.setMapTypeId('styled_map');
+            var centerControlDiv = document.createElement('div');
+            var centerControl = new CenterControl(centerControlDiv, map);
+
+            centerControlDiv.index = 1;
+            map.controls[google.maps.ControlPosition.TOP_CENTER].push(centerControlDiv);
+        }
+    </script>
+    <!--Put your Google API key below to make the map work-->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDv_STYxwU1RbEDPUjVc_UXMTKy0esKsQ&callback=initMap">
+    </script>
+</body>
+
+</html>

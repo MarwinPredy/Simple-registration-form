@@ -1,0 +1,452 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  body .createAccount {
+    height: 100vh;
+    width: 100%; }
+    body .createAccount .container-fluid {
+      padding: 0;
+      height: 100% !important; }
+      body .createAccount .container-fluid .row {
+        height: 100%; }
+        body .createAccount .container-fluid .row .leftContent {
+          height: 100%;
+          background-image: url("../images/bg.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: right; }
+          body .createAccount .container-fluid .row .leftContent .gradient {
+            background: rgba(0, 0, 0, 0.4);
+            height: 100%;
+            padding: 40px; }
+            body .createAccount .container-fluid .row .leftContent .gradient .buttonContainer {
+              width: 100%;
+              height: 10%;
+              display: flex; }
+              body .createAccount .container-fluid .row .leftContent .gradient .buttonContainer button {
+                height: 51px;
+                width: 39px;
+                border: 1.5px solid #FFFF;
+                border-radius: 0.2rem;
+                background: none;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                cursor: pointer; }
+                body .createAccount .container-fluid .row .leftContent .gradient .buttonContainer button .fa-chevron-left {
+                  color: #FFFF;
+                  font-size: 1.5rem; }
+            body .createAccount .container-fluid .row .leftContent .gradient .subtitle {
+              height: 5%;
+              padding: 0; }
+              body .createAccount .container-fluid .row .leftContent .gradient .subtitle p {
+                text-transform: uppercase;
+                color: #FFF8F8;
+                font-size: 10px;
+                font-weight: 500; }
+            @media (max-width: 768px) {
+              body .createAccount .container-fluid .row .leftContent .gradient .subtitle {
+                margin-top: 20px; } }
+            body .createAccount .container-fluid .row .leftContent .gradient .subContent {
+              height: 20%;
+              padding: 0; }
+              body .createAccount .container-fluid .row .leftContent .gradient .subContent .title {
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: bold;
+                color: #FFFF; }
+              body .createAccount .container-fluid .row .leftContent .gradient .subContent .text {
+                font-size: 14px;
+                color: #FFFF; }
+        @media (max-width: 767px) {
+          body .createAccount .container-fluid .row .leftContent {
+            height: 67%;
+            background-position: initial; } }
+        body .createAccount .container-fluid .row .rightContent .mapContainer {
+          display: flex;
+          justify-content: center;
+          margin-top: 15px;
+          height: 30%; }
+          body .createAccount .container-fluid .row .rightContent .mapContainer .map {
+            width: 70%;
+            height: 255px; }
+          body .createAccount .container-fluid .row .rightContent .mapContainer .gm-style-mtc {
+            display: none; }
+          body .createAccount .container-fluid .row .rightContent .mapContainer .gm-fullscreen-control {
+            height: 20px !important;
+            width: 20px !important; }
+            body .createAccount .container-fluid .row .rightContent .mapContainer .gm-fullscreen-control img {
+              height: 10px !important;
+              width: 10px !important; }
+          body .createAccount .container-fluid .row .rightContent .mapContainer .gm-control-active {
+            height: 20px !important;
+            width: 20px !important;
+            right: -5px !important; }
+            body .createAccount .container-fluid .row .rightContent .mapContainer .gm-control-active img {
+              height: 9px !important;
+              width: 9px !important; }
+          body .createAccount .container-fluid .row .rightContent .mapContainer .gm-bundled-control.gm-bundled-control-on-bottom .gmnoprint div:first-child {
+            height: 41px !important;
+            width: 20px !important; }
+          body .createAccount .container-fluid .row .rightContent .mapContainer .gm-bundled-control.gm-bundled-control-on-bottom .gmnoprint div:nth-child(2) {
+            width: 10px !important; }
+          body .createAccount .container-fluid .row .rightContent .mapContainer .gmnoprint:nth-child(1) {
+            left: 25px !important;
+            top: 115px !important; }
+          body .createAccount .container-fluid .row .rightContent .mapContainer .gm-svpc {
+            display: none; }
+          body .createAccount .container-fluid .row .rightContent .mapContainer .gm-style-cc {
+            display: none; }
+          body .createAccount .container-fluid .row .rightContent .mapContainer .bitMap {
+            height: 20px;
+            position: absolute;
+            margin-top: 115px; }
+          @media (max-width: 425px) {
+            body .createAccount .container-fluid .row .rightContent .mapContainer .recenter {
+              left: 123px !important; } }
+          @media screen and (min-width: 426px) and (max-width: 768px) {
+            body .createAccount .container-fluid .row .rightContent .mapContainer .recenter {
+              left: 154px !important; } }
+          @media screen and (min-width: 1440px) and (max-width: 2500px) {
+            body .createAccount .container-fluid .row .rightContent .mapContainer .recenter {
+              left: 311px !important; } }
+        body .createAccount .container-fluid .row .rightContent .fromContainer {
+          width: 70%;
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+          margin-top: 20px; }
+          body .createAccount .container-fluid .row .rightContent .fromContainer h3 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #363131;
+            opacity: 0.84; }
+          body .createAccount .container-fluid .row .rightContent .fromContainer .straight {
+            background-color: #565252;
+            height: 2px;
+            width: 50px; }
+          @media (max-width: 425px) {
+            body .createAccount .container-fluid .row .rightContent .fromContainer .straight {
+              width: 250px;
+              margin: 20px 0 10px 0; } }
+          body .createAccount .container-fluid .row .rightContent .fromContainer p {
+            font-size: 15px;
+            color: #363131;
+            margin-top: 5px;
+            opacity: 0.83;
+            margin-bottom: 10px; }
+          @media (max-width: 425px) {
+            body .createAccount .container-fluid .row .rightContent .fromContainer p {
+              text-align: center;
+              margin-bottom: 10px; } }
+          body .createAccount .container-fluid .row .rightContent .fromContainer form {
+            width: 100%;
+            display: flex;
+            flex-direction: column; }
+            body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow {
+              display: flex;
+              flex-direction: row;
+              padding-left: 30px;
+              height: 30px; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow p {
+                color: #5A5A5A;
+                font-size: 13px;
+                opacity: 0.9; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow .radioContainer {
+                display: flex;
+                flex-direction: row;
+                width: 80%;
+                justify-content: space-around; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow .radioContainer [type="radio"]:checked,
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow .radioContainer [type="radio"]:not(:checked) {
+                  position: absolute;
+                  left: -9999px; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow .radioContainer [type="radio"]:checked + label,
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow .radioContainer [type="radio"]:not(:checked) + label {
+                  position: relative;
+                  padding-left: 28px;
+                  cursor: pointer;
+                  line-height: 20px;
+                  display: inline-block;
+                  color: #5A5A5A; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow .radioContainer [type="radio"]:checked + label:before,
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow .radioContainer [type="radio"]:not(:checked) + label:before {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  opacity: 0.5;
+                  width: 18px;
+                  height: 18px;
+                  border: 1px solid #5A5A5A;
+                  border-radius: 100%;
+                  background: #fff; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow .radioContainer [type="radio"]:checked + label:after,
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow .radioContainer [type="radio"]:not(:checked) + label:after {
+                  content: '';
+                  width: 10px;
+                  height: 10px;
+                  background: #5A5A5A;
+                  position: absolute;
+                  opacity: 0.5;
+                  top: 4px;
+                  left: 4px;
+                  border-radius: 100%;
+                  -webkit-transition: all 0.2s ease;
+                  transition: all 0.2s ease; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow .radioContainer [type="radio"]:not(:checked) + label:after {
+                  opacity: 0;
+                  -webkit-transform: scale(0);
+                  transform: scale(0); }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .inputRow .radioContainer [type="radio"]:checked + label:after {
+                  opacity: 0.5;
+                  -webkit-transform: scale(1);
+                  transform: scale(1); }
+            body .createAccount .container-fluid .row .rightContent .fromContainer form .group {
+              position: relative;
+              margin-bottom: 5px;
+              /* active state */
+              /* BOTTOM BARS */
+              /* active state */
+              /* HIGHLIGHTER */
+              /* active state */ }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group input {
+                font-size: 13px;
+                font-weight: 500;
+                color: rgba(90, 90, 90, 0.9);
+                padding: 10px 10px 10px 0px;
+                display: block;
+                width: 100%;
+                padding-left: 30px;
+                border: none;
+                border-bottom: 1px solid rgba(151, 151, 151, 0.4); }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group input:focus {
+                outline: none; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group .fa-eye,
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group .fa-eye-slash {
+                position: absolute;
+                margin-top: -25px;
+                right: 1%;
+                color: #A4A4A4;
+                font-size: 13px; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group .fa-eye {
+                display: none; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group label {
+                color: #5A5A5A;
+                font-size: 13px;
+                opacity: 0.9;
+                font-weight: normal;
+                position: absolute;
+                pointer-events: none;
+                left: 30px;
+                top: 12px;
+                transition: 0.2s ease all;
+                -moz-transition: 0.2s ease all;
+                -webkit-transition: 0.2s ease all; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group input:focus ~ label,
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group input:valid ~ label {
+                top: -3px;
+                font-size: 10px;
+                color: #A2A2A2; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group .bar {
+                position: relative;
+                display: block;
+                width: 100%;
+                opacity: 0.5; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group .bar:before,
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group .bar:after {
+                content: '';
+                height: 1px;
+                width: 0;
+                bottom: 1px;
+                position: absolute;
+                background: #343333;
+                transition: 0.2s ease all;
+                -moz-transition: 0.2s ease all;
+                -webkit-transition: 0.2s ease all; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group .bar:before {
+                left: 50%; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group .bar:after {
+                right: 50%; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group input:focus ~ .bar:before,
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group input:focus ~ .bar:after {
+                width: 50%; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group .highlight {
+                position: absolute;
+                height: 50%;
+                width: 100px;
+                top: 5%;
+                left: 0;
+                pointer-events: none;
+                opacity: 0.5; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .group input:focus ~ .highlight {
+                -webkit-animation: inputHighlighter 0.3s ease;
+                -moz-animation: inputHighlighter 0.3s ease;
+                animation: inputHighlighter 0.3s ease; }
+            body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect {
+              display: flex;
+              flex-direction: row; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect .group {
+                position: relative;
+                margin-bottom: 5px; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect .group select {
+                  font-size: 13px;
+                  font-weight: 500;
+                  color: #5A5A5A;
+                  padding: 10px 10px 10px 0px;
+                  display: block;
+                  width: 100%;
+                  border: none;
+                  border-bottom: 1px solid rgba(151, 151, 151, 0.4);
+                  background: none; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect .group select:focus {
+                  outline: none; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect .group .bar {
+                  position: relative;
+                  display: block;
+                  width: 100%;
+                  opacity: 0.5; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect .group .bar:before,
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect .group .bar:after {
+                  content: '';
+                  height: 1px;
+                  width: 0;
+                  bottom: 1px;
+                  position: absolute;
+                  background: #343333;
+                  transition: 0.2s ease all;
+                  -moz-transition: 0.2s ease all;
+                  -webkit-transition: 0.2s ease all; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect .group .bar:before {
+                  left: 50%; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect .group .bar:after {
+                  right: 50%; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect .group select:focus ~ .bar:before,
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect .group select:focus ~ .bar:after {
+                  width: 50%; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect #groupMonth {
+                width: 50%;
+                margin-right: 20px; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect #groupMonth #month {
+                  padding-left: 28px;
+                  color: #5A5A5A;
+                  opacity: 0.9; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect #groupDay {
+                width: 20%; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .birthSelect #groupYear {
+                width: 30%;
+                margin-right: 20px; }
+            body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales {
+              display: flex;
+              flex-direction: row;
+              margin-top: 10px; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales .conditionContainer {
+                width: 20%;
+                padding-left: 30px;
+                margin-top: 0; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales .conditionContainer [type="checkbox"]:checked,
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales .conditionContainer [type="checkbox"]:not(:checked) {
+                  position: absolute;
+                  left: -9999px; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales .conditionContainer [type="checkbox"]:checked + label,
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales .conditionContainer [type="checkbox"]:not(:checked) + label {
+                  position: relative;
+                  padding-left: 28px;
+                  cursor: pointer;
+                  line-height: 20px;
+                  display: inline-block;
+                  color: #5A5A5A;
+                  opacity: 0.5; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales .conditionContainer [type="checkbox"]:checked + label:before,
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales .conditionContainer [type="checkbox"]:not(:checked) + label:before {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 18px;
+                  height: 18px;
+                  border: 1px solid #5A5A5A;
+                  background: #fff; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales .conditionContainer [type="checkbox"]:checked + label:after,
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales .conditionContainer [type="checkbox"]:not(:checked) + label:after {
+                  content: '';
+                  width: 10px;
+                  height: 10px;
+                  background: #5A5A5A;
+                  position: absolute;
+                  top: 4px;
+                  left: 4px;
+                  -webkit-transition: all 0.2s ease;
+                  transition: all 0.2s ease; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales .conditionContainer [type="checkbox"]:not(:checked) + label:after {
+                  opacity: 0;
+                  -webkit-transform: scale(0);
+                  transform: scale(0); }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales .conditionContainer [type="checkbox"]:checked + label:after {
+                  opacity: 1;
+                  -webkit-transform: scale(1);
+                  transform: scale(1); }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales p {
+                font-size: 13px;
+                color: #5A5A5A;
+                width: 80%;
+                margin-bottom: 30px;
+                text-align: left; }
+                body .createAccount .container-fluid .row .rightContent .fromContainer form .conditionGenerales p a {
+                  color: #5A5A5A;
+                  text-decoration: underline;
+                  font-style: italic;
+                  cursor: pointer; }
+            body .createAccount .container-fluid .row .rightContent .fromContainer form button {
+              height: 52px;
+              background-color: #343333;
+              color: #ffff;
+              border: none;
+              text-transform: uppercase;
+              font-size: 13px;
+              font-weight: 500;
+              letter-spacing: 0.2rem;
+              padding-left: 0;
+              border-radius: 0.2rem;
+              margin-top: -6px; }
+            body .createAccount .container-fluid .row .rightContent .fromContainer form p {
+              font-size: 13px;
+              color: #5A5A5A;
+              text-align: center;
+              margin-top: 7px; }
+              body .createAccount .container-fluid .row .rightContent .fromContainer form p a {
+                font-size: 13px;
+                color: #5A5A5A;
+                text-decoration: none;
+                cursor: pointer; }
+        @media (max-width: 425px) {
+          body .createAccount .container-fluid .row .rightContent .fromContainer {
+            align-items: center; } }
+
+@media (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: inherit; } }
+/* ANIMATIONS */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #343333; }
+  to {
+    width: 0;
+    background: transparent; } }
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #343333; }
+  to {
+    width: 0;
+    background: transparent; } }
+@keyframes inputHighlighter {
+  from {
+    background: #343333; }
+  to {
+    width: 0;
+    background: transparent; } }
+
+/*# sourceMappingURL=style.css.map */
